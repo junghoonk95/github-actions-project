@@ -23,5 +23,5 @@ jobs:
         image: docker-hub-repo/image-name
         tags: v3, latest
         registry: docker.io
-        username: jkang96
-        password: dckr_pat_UkGBiLAslYAs3y8NZLdnaxudYHk
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
